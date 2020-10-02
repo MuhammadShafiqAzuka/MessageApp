@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneLoginActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/phone_login_number_layout"
+    android:layout_width="match_parent"
+    android:layout_marginStart="50dp"
+    android:layout_marginEnd="50dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="200dp"
+    android:hint="@string/phone_number"
+    app:errorEnabled="true"
+    app:endIconMode="clear_text">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/phone_login_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:privateImeOptions="+60"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone_login_code_layout"
+        android:layout_below="@+id/phone_login_number_layout"
+        android:layout_width="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/verification_code"
+        app:errorEnabled="true"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_login_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textAlignment="center"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/send_code_button"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/send_verification_code"
+        android:textSize="16sp"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:layout_below="@+id/phone_login_code_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/verify_button"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/verify"
+        android:textSize="16sp"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:layout_below="@+id/send_code_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>

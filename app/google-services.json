@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "249187782022",
+    "firebase_url": "https://trackerchat-cebd7.firebaseio.com",
+    "project_id": "trackerchat-cebd7",
+    "storage_bucket": "trackerchat-cebd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249187782022:android:05d27f6434b95fc4987007",
+        "android_client_info": {
+          "package_name": "com.azuka.android.trakcerapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249187782022-l8kl5cb69sj8vbpipik2krupmdtm7d4r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.azuka.android.trakcerapps",
+            "certificate_hash": "9f353f5cc42e2948e7d61f984ee763cb66c8c809"
+          }
+        },
+        {
+          "client_id": "249187782022-dd1l39p5li6sspovr6ih0uqb7ct5elfo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq2htPg0IgjT4QmLg6bF2q5Rdt6zTz9cg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249187782022-dd1l39p5li6sspovr6ih0uqb7ct5elfo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

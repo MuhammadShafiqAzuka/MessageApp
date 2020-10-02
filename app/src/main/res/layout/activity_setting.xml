@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <include
+        android:id="@+id/setting_app_bar"
+        layout="@layout/app_bar_layout">
+    </include>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setting_row_profile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/profile">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/setting_row_email_layout"
+        android:layout_below="@+id/setting_row_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:hint="@string/email_address">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/setting_row_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/setting_row_name_layout"
+        android:layout_below="@+id/setting_row_email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/username">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/setting_row_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/setting_row_status_layout"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/status_optional"
+        android:layout_below="@+id/setting_row_name_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/setting_row_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/setting_row_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/update"
+        android:background="@drawable/border"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:layout_below="@+id/setting_row_status_layout">
+    </Button>
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/messge_profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/profile">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/reciever_msg_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/messge_profile_image"
+        android:background="@drawable/reciever_msg_layout"
+        android:text="reciever message"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textStyle="normal">
+    </com.google.android.material.textview.MaterialTextView>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/reciever_msg_time_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/messge_profile_image"
+        android:text="reciever message"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="normal">
+    </com.google.android.material.textview.MaterialTextView>
+    
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/message_sender_imageview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop">
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/message_reciever_imageview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="13dp"
+        android:scaleType="centerCrop">
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/reciever_msg_time_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:layout_toEndOf="@+id/messge_profile_image"
+        android:text="reciever message"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="normal">
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/sender_msg_time_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="146dp"
+        android:text="sender message"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:textColor="@color/grey">
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/sender_msg_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="@+id/reciever_msg_text"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sender_msg_layout"
+        android:text="sender message"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:textColor="#FFFFFF">
+    </com.google.android.material.textview.MaterialTextView>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/sender_msg_time_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="@+id/reciever_msg_text"
+        android:layout_marginTop="40dp"
+        android:text="sender message"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:textColor="@color/grey">
+    </com.google.android.material.textview.MaterialTextView>
+</RelativeLayout>

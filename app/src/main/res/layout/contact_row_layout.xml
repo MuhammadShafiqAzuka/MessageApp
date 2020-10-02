@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/profile"
+        android:id="@+id/contact_row_profile">
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/contact_row_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textStyle="normal"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="5dp"
+            android:textSize="17sp">
+        </com.google.android.material.textview.MaterialTextView>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/contact_row_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textStyle="normal"
+            android:textColor="@color/grey"
+            android:layout_margin="5dp"
+            android:textSize="15sp">
+        </com.google.android.material.textview.MaterialTextView>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_email_layout"
+        android:layout_width="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:hint="@string/email_address"
+        app:errorEnabled="true"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@+id/login_email_layout"
+        app:endIconMode="password_toggle"
+        app:errorEnabled="true"
+        android:hint="@string/password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/login_newaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_new_account"
+        android:textStyle="bold"
+        android:layout_below="@+id/login_password_layout"
+        android:layout_marginStart="222dp">
+    </com.google.android.material.textview.MaterialTextView>
+
+    <Button
+        android:id="@+id/login_button"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/login"
+        android:textSize="16sp"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:layout_below="@+id/login_newaccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or_login_using"
+        android:textSize="16sp"
+        android:layout_below="@+id/login_button"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_centerHorizontal="true"
+        app:buttonSize="standard"
+        android:layout_marginTop="490dp"/>
+
+    <Button
+        android:id="@+id/login_phone_button"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/phone_number"
+        android:textSize="16sp"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:layout_below="@+id/google_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>

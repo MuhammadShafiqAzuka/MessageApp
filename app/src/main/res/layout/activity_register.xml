@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/register_email_layout"
+    android:layout_width="match_parent"
+    android:layout_marginStart="50dp"
+    android:layout_marginEnd="50dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="200dp"
+    android:hint="@string/email_address"
+    app:errorEnabled="true"
+    app:endIconMode="clear_text">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_name_layout"
+        android:layout_below="@+id/register_email_layout"
+        android:layout_width="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        app:errorEnabled="true"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@+id/register_name_layout"
+        app:endIconMode="password_toggle"
+        app:errorEnabled="true"
+        android:hint="@string/password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_password2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@+id/register_password_layout"
+        app:endIconMode="password_toggle"
+        app:errorEnabled="true"
+        android:hint="@string/confirm_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/register_existmember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_account"
+        android:textStyle="bold"
+        android:layout_below="@+id/register_password2_layout"
+        android:layout_marginStart="222dp">
+    </com.google.android.material.textview.MaterialTextView>
+
+    <Button
+        android:id="@+id/register_button"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/register"
+        android:textSize="16sp"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:layout_below="@+id/register_existmember"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>

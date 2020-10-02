@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ChatActivity">
+
+   <include
+       android:id="@+id/chat_page_toolbar"
+       layout="@layout/app_bar_layout">
+   </include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chatll"
+        android:layout_marginBottom="6dp"
+        android:layout_below="@+id/chat_page_toolbar">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/chatll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/chat_file_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/files">
+        </ImageButton>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/chat_input_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write Message Here.."
+            android:layout_toEndOf="@+id/chat_file_send"
+            android:layout_toStartOf="@+id/chat_send"
+            android:maxLines="5"
+            android:padding="15dp">
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <ImageButton
+            android:id="@+id/chat_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/white"
+          android:src="@drawable/send">
+        </ImageButton>
+    </RelativeLayout>
+
+</RelativeLayout>

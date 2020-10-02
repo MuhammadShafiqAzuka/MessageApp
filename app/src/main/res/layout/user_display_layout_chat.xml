@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_profile_image"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/profile">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/user_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="username"
+                    android:textAlignment="textStart"
+                    android:textSize="17sp"
+                    android:textStyle="bold">
+                </com.google.android.material.textview.MaterialTextView>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/user_profile_online"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/online">
+                </androidx.appcompat.widget.AppCompatImageView>
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/user_text_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text here...."
+                android:textAlignment="textStart"
+                android:visibility="visible"
+                android:textSize="15sp"
+                android:textStyle="normal">
+            </com.google.android.material.textview.MaterialTextView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
